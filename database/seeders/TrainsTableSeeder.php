@@ -28,6 +28,7 @@ class TrainsTableSeeder extends Seeder
             $train->wagons_number = $faker->randomDigitNotNull();
             $train->on_time = $faker->boolean();
             $train->cancelled = $faker->boolean();
+            $train->save();
         }
     }
 }
