@@ -25,7 +25,7 @@ class TrainsTableSeeder extends Seeder
             $train->departure_time = $faker->dateTimeBetween('-1 day', '+1 day');
             $train->arrival_time = $faker->dateTimeBetween('+1 day', '+2 day');
             $train->train_code = 'AB'.$faker->randomNumber(4, false);
-            $train->wagons_number = $faker->randomDigitNotNull();
+            $train->train_wagons = $faker->randomDigitNotNull();
             $train->on_time = $faker->boolean();
             $train->cancelled = $faker->boolean();
             $train->save();
